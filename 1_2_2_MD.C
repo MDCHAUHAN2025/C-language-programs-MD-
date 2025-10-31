@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+
+  void main ()   {
+
+	   int X,Y,Z;
+
+  clrscr();
+
+	   printf("Enter value of X , Y and Z :");
+	   scanf("%d %d %d",&X,&Y,&Z);
+
+//Find largest value
+
+	   if (X>=Y && X>=Z ) { printf("largest value is %d",X); }
+	   else if (Z>=Y && Z>=X ) { printf("largest value is %d",Z); }
+	   else {printf ("largest value is %d",Y);}
+
+//Find smallest value
+
+	   if (X<=Y && X<=Z ) { printf("\nsmallest value is %d",X); }
+	   else if (Z<=Y && Z<=X ) { printf("\nsmallest value is %d",Z); }
+	   else {printf ("\nsmallest value is %d",Y);}
+
+	   getch ();
+
+}

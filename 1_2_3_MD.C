@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+	  void main()  {
+
+		   float net,gross,allowances,deductions;
+
+	 clrscr();
+
+	  printf("Enter Gross Salary: ");
+	   scanf("%f",&gross);
+
+	if(gross>10000){
+					 allowances=0.1*gross;
+					 deductions=0.03*gross ;
+					}
+	else if (gross>5000){
+					 allowances= 0.07*gross;
+					 deductions= 0.02*gross;
+					}
+
+	else {allowances=0;
+		  deductions=0;}
+
+		  net=gross+allowances-deductions;
+
+   printf("Net Salary is %.2f",net);
+
+   getch();
+}

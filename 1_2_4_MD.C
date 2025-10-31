@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+
+  void main()   {
+	   int number;
+
+	  clrscr();
+
+	   printf("Enter a Number:");
+		scanf("%d",&number);
+
+	   if(number%7==0){
+					 printf("Given Number Is Divisible By 7");
+					  }
+	   else{printf("Given Number Is Not Divisible By 7");}
+
+	   getch();
+}
